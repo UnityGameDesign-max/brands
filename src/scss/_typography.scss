@@ -7,28 +7,29 @@ h6,
 li{
   font-family: "Inter", serif;
   line-height: 1;
-  font-weight: var(--fw-400);
+  font-weight: var(--fw-700);
 }
 
-h1,
-.title1 {
-  font-size: 6rem;
-  position: relative;
+h1{
+  font-size: 3rem;
   @media (max-width: 767px) {
-    font-size: 4rem;
-  }
-  &::before {
-    content: "";
-    position: absolute;
-    width: 10rem;
-    height: 2px;
-    // top: -5rem;
-    background-color: var(--dark-violet);
-    @media screen and (max-width: 767px) {
-      display: none;
-    }
+    font-size: 2rem;
   }
 }
+h3{
+  font-size: 1.3rem;
+  font-family: "Inter-light";
+  position: relative;
+  &::before{
+    content: ' ';
+    position: absolute;
+    width: 2rem;
+    top: -2px;
+    height: 3px;
+    background-color: var(--primary-violet);
+  }
+}
+
 .title1--mod {
   &::before {
     content: "";
@@ -37,12 +38,9 @@ h1,
   }
 }
 
-h3,
-.title3 {
-  font-size: 2.2rem;
-}
-
 p {
   padding: 1rem 0;
+  font-weight: var(--fw-400);
   line-height: 1.5;
+  font-family: "Inter-light";
 }

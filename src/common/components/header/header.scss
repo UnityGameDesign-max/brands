@@ -3,13 +3,16 @@ $breakpoint-medium: 785px;
 $active-class: (
     display: flex,
     flex-direction: column,
+    position: absolute,
+    gap: 1.4rem,
     width: 100%,
     max-width: 100%,
+    background-color: var(--dark-violet),
     z-index: 999,
     height: 30vh,
-    margin: auto,
-    padding: 1rem,
-    bottom: 7rem,
+    align-items: center,
+    padding: 3rem 0,
+    top: 5rem,
     left: 0
 );
 
@@ -21,16 +24,22 @@ header{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        .nav-sm-items{
-            display: flex;
-            align-items: center;
-        }
+        
         .nav-items{
             display: flex;
             align-self: center;
             li{
                 margin-right: 1rem;
                 color: var(--white);
+                &:hover{
+                    color: var(--very-dark-violet);
+                }
+                @media (max-width: $breakpoint-medium){
+                    &:hover{
+                        background-color: var(--very-dark-violet);
+                        color: var(--white);
+                    }
+                }
             }
             @media (max-width: $breakpoint-medium){
                 display: $display-none-smallScreen;
@@ -44,21 +53,17 @@ header{
         .chat-btn{
             @media (max-width: $breakpoint-medium){
                 display: $display-none-smallScreen;
-                &.active{
-                    @each $property, $value in $active-class {
-                        #{$property} : $value
-                    }
-                }
             }
         }
 
-        .hamburger{
+        .hamburger-close{
             display: none;
             @media (max-width: $breakpoint-medium) {
                 display: block;
                 cursor: pointer;
             }
         }
+        
     }
 }
 
