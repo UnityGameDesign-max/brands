@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import CaseCard from 'common/components/cases/components/CaseCard';
 import { getAllCaseStudies } from 'providers/casesProvider';
 import './caseStudy.scss'
 
 function CaseStudy() {
-    const [imgUrl, setImgUrl] = useState('');
-    const [caseTitle, setCaseTitle] = useState('');
-    const [caseDescription, setCaseDescription] = useState('');
+    // const [imgUrl, setImgUrl] = useState('');
+    // const [caseTitle, setCaseTitle] = useState('');
+    // const [caseDescription, setCaseDescription] = useState('');
 
     useEffect(() => {
         function getCaseStudies(){
@@ -32,11 +32,12 @@ function CaseStudy() {
              caseTitle={'The Savings Jar'} 
              caseDescription={'Grow your savings treasure and grow your dragon.'}
             />
-
+            
             <CaseCard
-             bgImage={'https://d2vcaowhp5v7jq.cloudfront.net/skhokho.jpeg'}
-             caseTitle={'Skhokho seMali'} 
-             caseDescription={'Helping South Africans become #CashCleva with Skhokho and TymeBank'}
+            className='centered-card'
+            bgImage={'https://d2vcaowhp5v7jq.cloudfront.net/skhokho.jpeg'}
+            caseTitle={'Skhokho seMali'} 
+            caseDescription={'Helping South Africans become CashCleva with Skhokho and TymeBank'}
             />
         </div>
     </div>

@@ -1,14 +1,14 @@
 .case-study{
     max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+    .case-study-content{
+        max-width: 400px;
+        padding: 1rem;
+        color: var(--white);
+        h3{
+            padding-top: 0.8rem;
+        }
+    }
 }
 
-.case-study-content{
-    padding: 1rem;
-    color: var(--white);
-    h3{
-        padding-top: 0.8rem;
-    }
-    p{
-        text-align: left;
-    }
-}
