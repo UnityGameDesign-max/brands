@@ -1,0 +1,64 @@
+$display-none-smallScreen: none;
+$breakpoint-medium: 785px;
+$active-class: (
+    display: flex,
+    flex-direction: column,
+    width: 100%,
+    max-width: 100%,
+    z-index: 999,
+    height: 30vh,
+    margin: auto,
+    padding: 1rem,
+    bottom: 7rem,
+    left: 0
+);
+
+header{
+    width: 100%;
+    background-color: var(--dark-violet);
+
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .nav-sm-items{
+            display: flex;
+            align-items: center;
+        }
+        .nav-items{
+            display: flex;
+            align-self: center;
+            li{
+                margin-right: 1rem;
+                color: var(--white);
+            }
+            @media (max-width: $breakpoint-medium){
+                display: $display-none-smallScreen;
+                &.active{
+                    @each $property, $value in $active-class {
+                        #{$property} : $value
+                    }
+                }
+            }
+        }
+        .chat-btn{
+            @media (max-width: $breakpoint-medium){
+                display: $display-none-smallScreen;
+                &.active{
+                    @each $property, $value in $active-class {
+                        #{$property} : $value
+                    }
+                }
+            }
+        }
+
+        .hamburger{
+            display: none;
+            @media (max-width: $breakpoint-medium) {
+                display: block;
+                cursor: pointer;
+            }
+        }
+    }
+}
+

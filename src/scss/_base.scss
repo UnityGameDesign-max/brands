@@ -1,0 +1,23 @@
+.container {
+    width: 90%;
+    max-width: 120rem;
+    margin: auto;
+    padding: 1.5rem;
+}
+
+.btn {
+    padding: 0.8rem 1.8rem;
+    background: var(--dark-violet);
+    color: var(--white);
+    font-size: 14px;
+    cursor: pointer;
+    background-color: var(--dark-violet);
+    color: var(--white);
+    font-weight: var(--fw-700);
+    border-radius: 50px;
+    border: none;
+    &--nav-btn {
+      background-color: var(--white);
+      color: var(--dark-violet);
+    }
+}
