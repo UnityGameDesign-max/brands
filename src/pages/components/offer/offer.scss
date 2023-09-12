@@ -1,0 +1,28 @@
+.offer-message{
+    font-size: 2rem;
+    width: 100%;
+    max-width: 1300px;
+    line-height: 1.3;
+    @media (max-width: 837px){
+        font-size: 1.7rem;
+    }
+    @media (max-width: 620px){
+        font-size: 1.4rem;
+    }
+}
+
+.offer-tracks{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    @media (max-width: 1045px){
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 466px){
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        place-items: center;
+    }
+}

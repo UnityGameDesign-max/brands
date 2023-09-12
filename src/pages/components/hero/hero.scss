@@ -1,0 +1,21 @@
+.hero{
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 13rem);
+    background-image: url('../../../assets/images/HeroImage.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 69%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    .content{
+        color: var(--white);
+        text-align: left;
+        @media (max-width: 468px){
+            text-align: center;
+        }
+    }
+}
+
