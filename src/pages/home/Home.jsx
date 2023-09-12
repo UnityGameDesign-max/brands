@@ -1,9 +1,9 @@
-import Brands from 'common/components/brands/Brands'
-import CaseStudy from 'common/components/cases/CaseStudy'
+import Brands from 'pages/components/brands/Brands'
+import CaseStudy from 'pages/components/cases/CaseStudy'
 import Footer from 'common/components/footer/Footer'
 import Header from 'common/components/header/Header'
-import Hero from 'common/components/hero/Hero'
-import Offer from 'common/components/offer/Offer'
+import Hero from 'pages/components/hero/Hero'
+import Offer from 'pages/components/offer/Offer'
 
 import React from 'react'
 
