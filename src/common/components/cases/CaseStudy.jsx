@@ -18,7 +18,7 @@ function CaseStudy() {
     },[])
   return (
     <div className='container pd-vertically-2'>
-        <h3>Case studies</h3>
+        <p><span class="title1--mod"></span> Case studies</p>
 
         <div className='cases'>
             <CaseCard

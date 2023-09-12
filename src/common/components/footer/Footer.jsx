@@ -6,7 +6,7 @@ function Footer() {
   return (
     <div className='footer-container'>
         <div className='container footer-content'>
-            <h3>Contact us</h3>
+            <p><span class="title1--mod"></span> Contact us</p>
 
             <div className='title-address'>
                 <h1 className='footer-title pd-vertically-2'>Have a project in mind? Let's make it happen</h1>

@@ -9,7 +9,7 @@ import BlockchainTrack from 'assets/icons/Blockchain Icon.svg';
 function Offer() {
   return (
     <div className='container pd-vertically-4'>
-        <h3>What we do</h3>
+        <p><span class="title1--mod"></span> What we do</p>
         <h1 className='offer-message pd-vertically-2'>We offer a complete range of bespoke design and development services to help you turn your ideas into
         digital masterpieces</h1>
 

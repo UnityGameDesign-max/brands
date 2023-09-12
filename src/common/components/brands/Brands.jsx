@@ -19,7 +19,7 @@ import BBC from 'assets/brands/BBC.svg';
 function Brands() {
   return (
     <div className='container'>
-        <h3>You'll be in good company</h3>
+        <p><span class="title1--mod"></span> You’ll be in good company</p>
         <h1 className='pd-vertically-2 trusted-title'>Trusted by leading brands</h1>
 
         <div className='brand-container pd-vertically-2'>

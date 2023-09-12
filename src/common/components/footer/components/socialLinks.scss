@@ -6,5 +6,15 @@
     p{
         padding: 0.3rem 0;
     }
+    @media (max-width: 515px){
+        p{
+            font-size: smaller;
+        }
+    }
+    @media (max-width: 314px){
+        p{
+            max-width: 100px;
+        }
+    }
     
 }
